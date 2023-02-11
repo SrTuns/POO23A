@@ -8,6 +8,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using POO23A_MA.Cosas;
 
 namespace POO23A_MA
 {
