@@ -7,21 +7,22 @@
 
 - :zero: [Práctica 0 - Menú Principal](https://github.com/SrTuns/POO23A/blob/master/POO23A_MA/DlgPrincipal.cs)
 - Menú principal con el listado de actividades.
-- :one: [Práctica 1 - Clase de Calculadora Básica](https://github.com/SrTuns/POO23A/blob/master/POO23A_MA/CCalculadoraBasica.cs)
+- :one: [Práctica 1 - Clase de Calculadora Básica](https://github.com/SrTuns/POO23A/blob/master/POO23A_MA/Practicas/DlgPractica1.cs)
 - Clase de una calculadora con funciones básicas.
-- :two: Práctica 2 - Próximamente
-- :three: Práctica 3 - Próximamente
-- :four: Práctica 4 - Próximamente
-- :five: Práctica 5 - Próximamente
-- :six: Práctica 6 - Próximamente
-- :seven: Práctica 7 - Próximamente
+- :two: Práctica 2 - N/A
+- :three: Práctica 3 - N/A
+- :four: Práctica 4 - N/A
+- :five: Práctica 5 - N/A
+- :six: Práctica 6 - N/A
+- :seven: Práctica 7 - N/A
 
 
 ## :trident: Clases
+- [Clase Calculadora Básica](https://github.com/SrTuns/POO23A/blob/master/POO23A_MA/Clases/CCalculadoraBasica.cs)
 
 
 ## :drop_of_blood: Clase Personal
-
+- N/A
 
 ## :mortar_board: Actividad Final
 
