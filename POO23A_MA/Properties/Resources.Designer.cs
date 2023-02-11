@@ -222,26 +222,6 @@ namespace POO23A_MA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mesa_de_trabajo_2_test {
-            get {
-                object obj = ResourceManager.GetObject("Mesa de trabajo 2-test", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Mesa_de_trabajo_2_test1 {
-            get {
-                object obj = ResourceManager.GetObject("Mesa de trabajo 2-test1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Práctica_10 {
             get {
                 object obj = ResourceManager.GetObject("Práctica_10", resourceCulture);

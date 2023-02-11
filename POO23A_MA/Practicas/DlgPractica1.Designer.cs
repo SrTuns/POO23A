@@ -39,7 +39,7 @@
             // 
             // PbxIconoPractica1
             // 
-            this.PbxIconoPractica1.Image = global::POO23A_MA.Properties.Resources.Mesa_de_trabajo_2_test1;
+            this.PbxIconoPractica1.Image = global::POO23A_MA.Properties.Resources.ImagenP1;
             this.PbxIconoPractica1.Location = new System.Drawing.Point(12, 12);
             this.PbxIconoPractica1.Name = "PbxIconoPractica1";
             this.PbxIconoPractica1.Size = new System.Drawing.Size(101, 100);
