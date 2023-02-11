@@ -66,7 +66,7 @@ namespace POO23A_MA
             }
             else
             {
-                Resultado = -1; //Error..
+                Resultado = -1; //Error.
             }
 
             return Resultado;
