@@ -51,23 +51,101 @@ namespace POO23A_MA
             Reproducir.Play();
         }
 
+        //-------------------------------------------------------------------------
+        //Crea 3 objetos de calculadora en variables independientes..
+        //-------------------------------------------------------------------------
         private void BtnCalculadora_Click(object sender, EventArgs e)
         {
-            CCalculadoraBasica MiCalculadora;
+            CCalculadoraBasica MiCalculadora1;
+            CCalculadoraBasica MiCalculadora2;
+            CCalculadoraBasica MiCalculadora3;
             double Resultado;
+            double Sumatoria;
 
-            MiCalculadora = new CCalculadoraBasica(2, 3);
-            Resultado = MiCalculadora.Suma();
-            MessageBox.Show("El resultado de la suma es " + Resultado.ToString());
+            //Se crean las calculadoras.
 
-            Resultado = MiCalculadora.Resta();
+            MiCalculadora1 = new CCalculadoraBasica(1, 2);
+            MiCalculadora2 = new CCalculadoraBasica(3, 4);
+            MiCalculadora3 = new CCalculadoraBasica(5, 6);
+
+            //Se agregan a la lista.
+
+            List<CCalculadoraBasica> MiListaCalculadoras;
+            MiListaCalculadoras = new List<CCalculadoraBasica>();//Constructor
+            MiListaCalculadoras.Add(MiCalculadora1);
+            MiListaCalculadoras.Add(MiCalculadora2);
+            MiListaCalculadoras.Add(MiCalculadora3);
+
+            //Se realizan operaciones.
+
+            Resultado = MiCalculadora1.Multiplica();
+            MessageBox.Show("El resultado de la multiplicación en calc 1 es  " + Resultado.ToString());
+
+            Resultado = MiCalculadora2.Multiplica();
+            MessageBox.Show("El resultado de la multiplicación en calc 2 es  " + Resultado.ToString());
+
+            Resultado = MiCalculadora3.Multiplica();
+            MessageBox.Show("El resultado de la multiplicación en calc 3 es  " + Resultado.ToString());
+
+            //Recorre la lista de calculadoras para obtener su resultado.
+
+            Sumatoria = 0;
+
+            foreach (CCalculadoraBasica CalculadoraAux in MiListaCalculadoras)
+            {
+                double ResultadoDesdeLista;
+
+                ResultadoDesdeLista = CalculadoraAux.GetResultado();
+
+                MessageBox.Show("El resultado obtenido dentro de la lista es " + ResultadoDesdeLista);
+
+                Sumatoria = Sumatoria + CalculadoraAux.GetResultado();
+            }
+
+            MessageBox.Show("La sumatoria de los resultados de las calculadoras es " + Sumatoria);
+
+            //Efecto Resta-Multiplicación-División
+
+            Resultado = MiCalculadora1.Resta();
             MessageBox.Show("El resultado de la resta es " + Resultado.ToString());
 
-            Resultado = MiCalculadora.Multiplica();
+            Resultado = MiCalculadora1.Multiplica();
             MessageBox.Show("El resultado de la multiplicación es " + Resultado.ToString());
 
-            Resultado = MiCalculadora.Divide();
+            Resultado = MiCalculadora1.Divide();
             MessageBox.Show("El resultado de la división es " + Resultado.ToString());
+        }
+
+        //-------------------------------------------------------------------------
+        //Crea 100 objetos de calculadora dentro de un Iterador.
+        //-------------------------------------------------------------------------
+        private void Btn100Calculadoras_Click(object sender, EventArgs e)
+        {
+            CCalculadoraBasica MiCalculadora1;
+            List<CCalculadoraBasica> MiListaCalculadoras;
+
+            MiListaCalculadoras = new List<CCalculadoraBasica>();
+
+            double Aux = 1;
+
+            for (int i = 0; i < 100; i++)
+            {
+                MiCalculadora1 = new CCalculadoraBasica(Aux, Aux + 1);
+                MiCalculadora1.Multiplica();
+                MiListaCalculadoras.Add(MiCalculadora1);
+
+                Aux = Aux + 2;
+            }
+
+            double Sumatoria;
+            Sumatoria = 0;
+
+            foreach (CCalculadoraBasica CalculadoraAux in MiListaCalculadoras)
+            {
+                Sumatoria = Sumatoria + CalculadoraAux.GetResultado();
+            }
+
+            MessageBox.Show(Sumatoria.ToString());
         }
     }
 }

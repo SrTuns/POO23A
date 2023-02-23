@@ -30,9 +30,10 @@
         {
             this.PbxIconoPractica1 = new System.Windows.Forms.PictureBox();
             this.PnlFondo = new System.Windows.Forms.Panel();
+            this.Btn100Calculadoras = new System.Windows.Forms.Button();
+            this.BtnCalculadora = new System.Windows.Forms.Button();
             this.LblDescripcion = new System.Windows.Forms.Label();
             this.LblPractica1 = new System.Windows.Forms.Label();
-            this.BtnCalculadora = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbxIconoPractica1)).BeginInit();
             this.PnlFondo.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // PnlFondo
             // 
             this.PnlFondo.BackgroundImage = global::POO23A_MA.Properties.Resources.Mesa_de_trabajo_1_100a;
+            this.PnlFondo.Controls.Add(this.Btn100Calculadoras);
             this.PnlFondo.Controls.Add(this.BtnCalculadora);
             this.PnlFondo.Controls.Add(this.LblDescripcion);
             this.PnlFondo.Controls.Add(this.LblPractica1);
@@ -59,6 +61,26 @@
             this.PnlFondo.Name = "PnlFondo";
             this.PnlFondo.Size = new System.Drawing.Size(800, 450);
             this.PnlFondo.TabIndex = 1;
+            // 
+            // Btn100Calculadoras
+            // 
+            this.Btn100Calculadoras.Location = new System.Drawing.Point(20, 170);
+            this.Btn100Calculadoras.Name = "Btn100Calculadoras";
+            this.Btn100Calculadoras.Size = new System.Drawing.Size(141, 27);
+            this.Btn100Calculadoras.TabIndex = 3;
+            this.Btn100Calculadoras.Text = "Calculadora Básica I100";
+            this.Btn100Calculadoras.UseVisualStyleBackColor = true;
+            this.Btn100Calculadoras.Click += new System.EventHandler(this.Btn100Calculadoras_Click);
+            // 
+            // BtnCalculadora
+            // 
+            this.BtnCalculadora.Location = new System.Drawing.Point(20, 137);
+            this.BtnCalculadora.Name = "BtnCalculadora";
+            this.BtnCalculadora.Size = new System.Drawing.Size(141, 27);
+            this.BtnCalculadora.TabIndex = 2;
+            this.BtnCalculadora.Text = "Calculadora Básica 3V";
+            this.BtnCalculadora.UseVisualStyleBackColor = true;
+            this.BtnCalculadora.Click += new System.EventHandler(this.BtnCalculadora_Click);
             // 
             // LblDescripcion
             // 
@@ -78,16 +100,6 @@
             this.LblPractica1.Size = new System.Drawing.Size(227, 58);
             this.LblPractica1.TabIndex = 0;
             this.LblPractica1.Text = "N° Práctica: 1\r\nFecha Inicio: 26-01-23\r\nSimbolo Práctica: I\r\nNombre: Inicio";
-            // 
-            // BtnCalculadora
-            // 
-            this.BtnCalculadora.Location = new System.Drawing.Point(20, 137);
-            this.BtnCalculadora.Name = "BtnCalculadora";
-            this.BtnCalculadora.Size = new System.Drawing.Size(116, 27);
-            this.BtnCalculadora.TabIndex = 2;
-            this.BtnCalculadora.Text = "Calculadora Básica";
-            this.BtnCalculadora.UseVisualStyleBackColor = true;
-            this.BtnCalculadora.Click += new System.EventHandler(this.BtnCalculadora_Click);
             // 
             // DlgPractica1
             // 
@@ -113,5 +125,6 @@
         private Label LblPractica1;
         private Label LblDescripcion;
         private Button BtnCalculadora;
+        private Button Btn100Calculadoras;
     }
 }

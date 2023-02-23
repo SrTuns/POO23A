@@ -71,5 +71,13 @@ namespace POO23A_MA.Cosas
 
             return Resultado;
         }
+
+        //-------------------------------------------------------------------------
+        //Obtiene el resultadode la calculadora en este momento.
+        //-------------------------------------------------------------------------
+        public double GetResultado()
+        {
+            return Resultado;
+        }
     }
 }
