@@ -120,6 +120,7 @@
             this.BtnPractica10.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica10.TabIndex = 11;
             this.BtnPractica10.UseVisualStyleBackColor = false;
+            this.BtnPractica10.Click += new System.EventHandler(this.BtnPractica10_Click);
             this.BtnPractica10.MouseEnter += new System.EventHandler(this.BtnPractica10_MouseEnter);
             this.BtnPractica10.MouseLeave += new System.EventHandler(this.BtnPractica10_MouseLeave);
             // 
@@ -136,6 +137,7 @@
             this.BtnPractica9.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica9.TabIndex = 10;
             this.BtnPractica9.UseVisualStyleBackColor = false;
+            this.BtnPractica9.Click += new System.EventHandler(this.BtnPractica9_Click);
             this.BtnPractica9.MouseEnter += new System.EventHandler(this.BtnPractica9_MouseEnter);
             this.BtnPractica9.MouseLeave += new System.EventHandler(this.BtnPractica9_MouseLeave);
             // 
@@ -152,6 +154,7 @@
             this.BtnPractica8.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica8.TabIndex = 9;
             this.BtnPractica8.UseVisualStyleBackColor = false;
+            this.BtnPractica8.Click += new System.EventHandler(this.BtnPractica8_Click);
             this.BtnPractica8.MouseEnter += new System.EventHandler(this.BtnPractica8_MouseEnter);
             this.BtnPractica8.MouseLeave += new System.EventHandler(this.BtnPractica8_MouseLeave);
             // 
@@ -168,6 +171,7 @@
             this.BtnPractica7.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica7.TabIndex = 8;
             this.BtnPractica7.UseVisualStyleBackColor = false;
+            this.BtnPractica7.Click += new System.EventHandler(this.BtnPractica7_Click);
             this.BtnPractica7.MouseEnter += new System.EventHandler(this.BtnPractica7_MouseEnter);
             this.BtnPractica7.MouseLeave += new System.EventHandler(this.BtnPractica7_MouseLeave);
             // 
@@ -184,6 +188,7 @@
             this.BtnPractica6.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica6.TabIndex = 7;
             this.BtnPractica6.UseVisualStyleBackColor = false;
+            this.BtnPractica6.Click += new System.EventHandler(this.BtnPractica6_Click);
             this.BtnPractica6.MouseEnter += new System.EventHandler(this.BtnPractica6_MouseEnter);
             this.BtnPractica6.MouseLeave += new System.EventHandler(this.BtnPractica6_MouseLeave);
             // 
@@ -200,6 +205,7 @@
             this.BtnPractica5.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica5.TabIndex = 6;
             this.BtnPractica5.UseVisualStyleBackColor = false;
+            this.BtnPractica5.Click += new System.EventHandler(this.BtnPractica5_Click);
             this.BtnPractica5.MouseEnter += new System.EventHandler(this.BtnPractica5_MouseEnter);
             this.BtnPractica5.MouseLeave += new System.EventHandler(this.BtnPractica5_MouseLeave);
             // 
@@ -216,6 +222,7 @@
             this.BtnPractica4.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica4.TabIndex = 5;
             this.BtnPractica4.UseVisualStyleBackColor = false;
+            this.BtnPractica4.Click += new System.EventHandler(this.BtnPractica4_Click);
             this.BtnPractica4.MouseEnter += new System.EventHandler(this.BtnPractica4_MouseEnter);
             this.BtnPractica4.MouseLeave += new System.EventHandler(this.BtnPractica4_MouseLeave);
             // 
@@ -232,6 +239,7 @@
             this.BtnPractica3.Size = new System.Drawing.Size(52, 52);
             this.BtnPractica3.TabIndex = 4;
             this.BtnPractica3.UseVisualStyleBackColor = false;
+            this.BtnPractica3.Click += new System.EventHandler(this.BtnPractica3_Click);
             this.BtnPractica3.MouseEnter += new System.EventHandler(this.BtnPractica3_MouseEnter);
             this.BtnPractica3.MouseLeave += new System.EventHandler(this.BtnPractica3_MouseLeave);
             // 

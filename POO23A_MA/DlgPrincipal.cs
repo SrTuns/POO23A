@@ -55,10 +55,9 @@ namespace POO23A_MA
         }
 
         //-------------------------------------------------------------------------
-        //Listado de botones para las prácticas.
+        //Listado de botones para las prácticas (Click).
         //-------------------------------------------------------------------------
 
-        //Abrir Práctica 1
         private void BtnPractica1_Click(object sender, EventArgs e)
         {
             DlgPractica1 VP1 = new DlgPractica1();
@@ -68,8 +67,47 @@ namespace POO23A_MA
             SonidoAbrir();
         }
 
-        //Abrir Práctica 2
         private void BtnPractica2_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica3_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica4_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica5_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica6_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica7_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica8_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica9_Click(object sender, EventArgs e)
+        {
+            SonidoBloqueado();
+        }
+
+        private void BtnPractica10_Click(object sender, EventArgs e)
         {
             SonidoBloqueado();
         }
@@ -82,7 +120,7 @@ namespace POO23A_MA
         }
 
         //-------------------------------------------------------------------------
-        //Listado de eventos para los botones de las prácticas.
+        //Listado de eventos para los botones de las prácticas (MouseEnter (Entrar al boton)).
         //-------------------------------------------------------------------------
         private void BtnPractica1_MouseEnter(object sender, EventArgs e)
         {
@@ -142,6 +180,59 @@ namespace POO23A_MA
         {
             NumImagen = 10;
             EjecutarFunciones();
+        }
+
+        //-------------------------------------------------------------------------
+        //Listado de eventos para los botones de las prácticas (MouseLeave (Salir del boton)).
+        //-------------------------------------------------------------------------
+        private void BtnPractica1_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica2_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica3_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica4_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica5_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica6_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica7_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica8_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica9_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
+        }
+
+        private void BtnPractica10_MouseLeave(object sender, EventArgs e)
+        {
+            QuitarResaltado();
         }
 
         //-------------------------------------------------------------------------
@@ -222,14 +313,6 @@ namespace POO23A_MA
             LblDescripcionPractica.Text = fileContent;
         }
 
-        private void EjecutarFunciones()
-        {
-            SonidoSeleccion();
-            CargarDescripcion();
-            CargarImagen();
-            PonerResaltado();
-        }
-
         private void PonerResaltado()
         {
             switch (NumImagen)
@@ -304,54 +387,12 @@ namespace POO23A_MA
             }
         }
 
-        private void BtnPractica1_MouseLeave(object sender, EventArgs e)
+        private void EjecutarFunciones()
         {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica2_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica3_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica4_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica5_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica6_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica7_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica8_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica9_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
-        }
-
-        private void BtnPractica10_MouseLeave(object sender, EventArgs e)
-        {
-            QuitarResaltado();
+            SonidoSeleccion();
+            CargarDescripcion();
+            CargarImagen();
+            PonerResaltado();
         }
     }
 }
