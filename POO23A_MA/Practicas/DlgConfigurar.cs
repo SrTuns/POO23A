@@ -37,38 +37,29 @@ namespace POO23A_MA
             MessageBox.Show("Descripción guardada.");
 
             TbxDescripcion.Text = "";
-
-            string fileName = Properties.Resources.Desc1;
-            string text = TbxDescripcion.Text;
-
-            using (StreamWriter writer = new StreamWriter(fileName))
-            {
-                writer.Write(text);
-            }
-
         }
 
         private void TbxDescripcion_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                //StreamWriter outputFile;
+                StreamWriter outputFile;
 
-                //outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
+                outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
 
-                //string[] lineas = {
-                //TbxDescripcion.Text};
+                string[] lineas = {
+                TbxDescripcion.Text};
 
-                //foreach (string linea in lineas)
-                //{
-                //    outputFile.WriteLine(linea);
-                //}
+                foreach (string linea in lineas)
+                {
+                    outputFile.WriteLine(linea);
+                }
 
-                //outputFile.Close();
+                outputFile.Close();
 
-                //MessageBox.Show("Descripción guardada.");
+                MessageBox.Show("Descripción guardada.");
 
-                //TbxDescripcion.Text = "";
+                TbxDescripcion.Text = "";
             }
         }
     }
