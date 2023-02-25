@@ -126,6 +126,10 @@ namespace POO23A_MA
         {
             NumImagen = 1;
             EjecutarFunciones();
+
+            string text = Properties.Resources.Desc1; // Reemplaza "NombreArchivo" con el nombre que le hayas asignado al archivo
+            LblDescripcionPractica.Text = text; // Reemplaza "label1" con el nombre de tu Label
+
         }
 
         private void BtnPractica2_MouseEnter(object sender, EventArgs e)
@@ -390,7 +394,7 @@ namespace POO23A_MA
         private void EjecutarFunciones()
         {
             SonidoSeleccion();
-            CargarDescripcion();
+            //CargarDescripcion();
             CargarImagen();
             PonerResaltado();
         }

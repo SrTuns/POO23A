@@ -20,46 +20,64 @@ namespace POO23A_MA
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            StreamWriter outputFile;
+            //StreamWriter outputFile;
 
-            outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
+            //outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
 
-            string[] lineas = {
-                TbxDescripcion.Text};
+            //string[] lineas = {
+            //    TbxDescripcion.Text};
 
-            foreach (string linea in lineas)
+            //foreach (string linea in lineas)
+            //{
+            //    outputFile.WriteLine(linea);
+            //}
+
+            //outputFile.Close();
+
+            //MessageBox.Show("Descripción guardada.");
+
+            //TbxDescripcion.Text = "";
+
+            //string fileName = Properties.Resources.Desc1;
+            //string text = TbxDescripcion.Text;
+
+            //using (StreamWriter writer = new StreamWriter(fileName))
+            //{
+            //    writer.Write(text);
+            //}
+
+            string fileName = "Desc1.txt"; // aquí debes proporcionar el nombre de archivo deseado
+            string text = TbxDescripcion.Text;
+
+            using (Stream stream = (Stream)Properties.Resources.ResourceManager.GetObject("Desc1"))
+            using (StreamWriter writer = new StreamWriter(stream))
             {
-                outputFile.WriteLine(linea);
+                writer.Write(text);
             }
 
-            outputFile.Close();
-
-            MessageBox.Show("Descripción guardada.");
-
-            TbxDescripcion.Text = "";
         }
 
         private void TbxDescripcion_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                StreamWriter outputFile;
+                //StreamWriter outputFile;
 
-                outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
+                //outputFile = new StreamWriter("C:\\Users\\PC\\Documents\\Universidad\\3er Semestre\\Programación Orientada a Objetos\\Descripciones\\" + CbxEscogerPractica.Text + ".txt");
 
-                string[] lineas = {
-                TbxDescripcion.Text};
+                //string[] lineas = {
+                //TbxDescripcion.Text};
 
-                foreach (string linea in lineas)
-                {
-                    outputFile.WriteLine(linea);
-                }
+                //foreach (string linea in lineas)
+                //{
+                //    outputFile.WriteLine(linea);
+                //}
 
-                outputFile.Close();
+                //outputFile.Close();
 
-                MessageBox.Show("Descripción guardada.");
+                //MessageBox.Show("Descripción guardada.");
 
-                TbxDescripcion.Text = "";
+                //TbxDescripcion.Text = "";
             }
         }
     }
