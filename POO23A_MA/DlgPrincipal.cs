@@ -30,7 +30,7 @@ namespace POO23A_MA
             InitializeComponent();
             Altura = 720;
             Ancho = 1260;
-            Text = "Alexis Montes";
+            Text = "A";
         }
 
         SoundPlayer Reproducir = new SoundPlayer();
