@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="CZombie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CZombieComun.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CZombieRomero.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CZombieWitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DlgBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DlgPractica2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menus\DlgPrincipalCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DlgPrincipalSistemaSolar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Practicas\DlgConfigurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menus\DlgPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Practicas\DlgPractica1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
